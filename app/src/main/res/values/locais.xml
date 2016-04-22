@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locais_array">
+        <item>Largo Dom João</item>
+        <item>Amendoim</item>
+        <item>DER</item>
+        <item>CDC Acabamentos</item>
+        <item>Marques Center</item>
+        <item>Campo do Tijuco</item>
+        <item>Cordeior RG</item>
+        <item>Trevo proximo a Moradia Estudantil</item>
+        <item>Campus JK</item>
+    </string-array>
+</resources>

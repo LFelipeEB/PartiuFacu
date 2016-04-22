@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adicionar_carona"
+            android:icon="@drawable/carro_cifrao_black"
+            android:title="Adicionar Carona" />
+        <item
+            android:id="@+id/nav_buscar_caronas"
+            android:icon="@drawable/carro_busca_black"
+            android:title="Buscar Caronas" />
+        <item
+            android:id="@+id/nav_gerenciar_caronas"
+            android:icon="@drawable/verification_black"
+            android:title="Gerenciar suas Caronas" />
+    </group>
+
+    <item android:title="Sobre" >
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/nav_projeto_carona"
+                    android:icon="@drawable/info_black"
+                    android:title="Projeto Carona" />
+                <item
+                    android:id="@+id/nav_desenvolvedores"
+                    android:icon="@drawable/developer_black"
+                    android:title="Desenvolvedores" />
+                <item
+                    android:id="@+id/nav_parcerias"
+                    android:icon="@drawable/parceria_black1"
+                    android:title="Parcerias" />
+
+
+                <item
+                    android:id="@+id/nav_sair"
+                    android:icon="@android:drawable/stat_notify_sync_noanim"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

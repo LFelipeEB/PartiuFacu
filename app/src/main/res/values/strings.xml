@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Partiu Facu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="banner_ad_unit_id1">ca-app-pub-1986535139196619/5003489887</string>
+
+    <!-- Sobre o Partiu Facul -->
+    <string name="sobre_partiu_facul">Sobre o Projeto Partiu Facul</string>
+    <string name="sobre_partiu_facul_descricao">
+        O Partiu Facul começou a ser desenvolvido em Dezembro de 2015, por três alunos de Sistemas de Informação da UFVJM, com objetivo de criar uma ferramenta unificada e um método eficaz de se conseguir carona para ir para as aulas no Campus II. É uma plataforma para se conseguir carona de forma rápida e segura sem necessidade de postar em grupos do Facebook ou do WhatsApp.\n\n
+
+        O aplicativo funciona de forma simples: quem está indo para o Campus II e tem vagas no carro, divulga no aplicativo o número de vagas disponíveis e o valor que ele(a) vai cobrar pela carona. Os que querem carona para o Campus II vão buscar caronas disponíveis naquele dia e selecionar a carona que for mais conveniente.
+    </string>
+
+    <!-- Desenvolvedores -->
+    <string name="desenvolvedores">Desenvolvedores</string>
+    <string name="desenvolvedores_luiz">Luiz Felipe Evaristo</string>
+    <string name="desenvolvedores_luiz_descricao">Aluno do curso de Sistemas de Informação, desenvolvedor Android.</string>
+
+    <string name="desenvolvedores_mauricio">Maurício Santana</string>
+    <string name="desenvolvedores_mauricio_descricao">Aluno do curso de Sistemas de Informação, desenvolvedor PHP.</string>
+
+    <string name="desenvolvedores_luciano">Luciano Silva</string>
+    <string name="desenvolvedores_luciano_descricao">Aluno do curso de Sistemas de Informação, desenvolvedor Android.</string>
+
+    <!-- Parcerias -->
+    <string name="parcerias_descricao">Esta são as empresas que apoiam a carona solidaria !</string>
+    <string name="hintAdd">Estou passando por ... </string>
+
+</resources>

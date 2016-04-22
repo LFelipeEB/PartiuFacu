@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/ligth_green"
+    android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.InserirActivity">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edNome"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="Nome da Carona: "
+                android:inputType="text"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edVagas"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="Vagas: "
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/addHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="XX : XX" />
+
+            <Button
+                android:id="@+id/addDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="XX / XX / XXXX" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edPreco"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="Preco: "
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView android:text="Selecione o lugar de saida:" android:paddingTop="16dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Spinner android:id="@+id/spinnerSaida"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:text="Selecione para aonde vai:" android:paddingTop="16dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <Spinner android:id="@+id/spinnerChegada"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView android:text="Observações: "
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <EditText android:id="@+id/obsAdd" android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCadastrar" android:hint="@string/hintAdd"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

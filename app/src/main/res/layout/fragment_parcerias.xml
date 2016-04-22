@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ligth_green"
+    tools:context="com.partiufacu.kronaproject.fragment.ParceriasFragment">
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/parcerias_descricao"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/parceiro1"
+                android:src="@drawable/logo_fxnet"
+                android:layout_width="320dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"/>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:layout_gravity="center"
+                ads:adSize="LARGE_BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id1"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:layout_gravity="center"
+        android:layout_width="wrap_content" android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <Button android:id="@+id/btnBuscaParcerias" android:text="Buscar por carona !"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+
+    <Button android:id="@+id/btnDivulgaParcerias" android:text="Divulgar uma Carona"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.partiufacu.kronaproject.activity.LoginActivity">
+
+    <include layout="@layout/toolbar_top" />
+
+    <LinearLayout
+        android:id="@+id/layout_logins"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView android:src="@drawable/icon_principal_quarto"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/userLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="e-mail"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/senhaLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:hint="Senha: "
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="30"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button android:text="Fazer Login" android:id="@+id/btnLogin"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_facebook"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/layout_cadastro"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="Informe seu nome"
+            android:id="@+id/cadastro_nome"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Informe seu email"
+            android:id="@+id/cadastro_email"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Defina uma senha"
+            android:id="@+id/cadastro_senha"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Informe o curso que você faz"
+            android:id="@+id/cadastro_curso"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Informe seu telefone"
+            android:id="@+id/cadastro_telefone"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="Informe o bairro que você mora"
+            android:id="@+id/cadastro_endereço"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button android:text="Confirmar" android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
